@@ -1,21 +1,15 @@
-import { NavItem } from "react-bootstrap";
+import HornedBeasts from "./horned.js"
 
-function Main() {
+function Main(props) {
 
-  return <HornedBeasts title={'Rhino'} description="Thicc Unicorn"/>
 
-}
-
-function HornedBeasts(props) {
   return (
-    <div>
-      <h1>{props.title}</h1>
-      <p>{props.description}</p>
-
-      <h1>{props.title}</h1>
-      <p>{props.description}</p>
-    </div>
-  );
+    <>
+    {
+      props.data.map( element => <HornedBeasts title={element.title} description={element.description} img={element.image_url} />)
+    }
+    </>
+  )
 }
 
 export default Main;
