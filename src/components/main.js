@@ -1,8 +1,6 @@
 
 function Main() {
 
-  return <HornedBeasts title={'Narwhal'} description="Aquatic stabby boi" />
-
   return <HornedBeasts title={'Rhino'} description="Thicc Unicorn" />
 
 }
