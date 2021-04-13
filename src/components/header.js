@@ -2,7 +2,7 @@
 function Header() {
   return (
     <h1>
-      Yowza????
+      Horned Beasts!!!
     </h1>
   );
 }
