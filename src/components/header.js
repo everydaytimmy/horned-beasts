@@ -2,7 +2,7 @@
 function Header() {
   return (
     <h1>
-      Horned Beasts!!!
+      Horned Beasts!!
     </h1>
   );
 }
