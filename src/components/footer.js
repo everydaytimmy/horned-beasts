@@ -1,8 +1,16 @@
-import { Component } from 'react';
+
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
 
 
-
-
-export default function Footer() {
-  return <h3>Timothy Viccari</h3>;
+class Header extends React.Component {
+  render() {
+    return(
+        <Navbar bg="dark" variant="dark">
+          <Navbar.Brand href="#home">Timothy Viccari</Navbar.Brand>
+        </Navbar>
+    )
+  }
 }
+
+export default Header;
