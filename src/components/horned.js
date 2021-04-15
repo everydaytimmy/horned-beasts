@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+// import SelectedBeasts from 'selectedbeasts.js';
 
 
 class HornedBeasts extends React.Component {
@@ -22,7 +23,6 @@ class HornedBeasts extends React.Component {
         <Card bg="secondary" 
         variant="dark" 
         style={{ minWidth: '18rem' }}
-        onClick={this.addFavorite}
         >
           <Card.Img variant="top" src={this.props.img} />
           <Card.Body>
@@ -31,7 +31,8 @@ class HornedBeasts extends React.Component {
             🤙 = {this.state.likes}
           </Card.Text>
             <Card.Text>{this.props.description}</Card.Text>
-            <Button variant="primary">Do Something</Button>
+            <Button variant="primary" 
+            onClick={this.addFavorite}>Favorite</Button>
           </Card.Body>
         </Card>
     );
@@ -39,3 +40,5 @@ class HornedBeasts extends React.Component {
 }
 
 export default HornedBeasts;
+
+// open = {this.handleShow} close = {this.handleClose} show = {this.state.showModal}

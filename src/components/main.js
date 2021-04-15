@@ -11,7 +11,7 @@ class Main extends React.Component {
       <>
         <CardColumns id="card">
           {
-            this.props.data.map(element => <HornedBeasts title={element.title} description={element.description} img={element.image_url} />)
+            this.props.data.map(element => <HornedBeasts title={element.title} description={element.description} img={element.image_url} open={this.props.open} close={this.props.close} show={this.props.show}/>)
           }
         </CardColumns>
       </>
@@ -20,3 +20,4 @@ class Main extends React.Component {
 }
 
 export default Main;
+
