@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 // import CardDeck from 'react-bootstrap/CardDeck';
-import CardColumns from 'react-bootstrap/CardColumns';
 
 class HornedBeasts extends React.Component {
 
@@ -13,6 +13,7 @@ class HornedBeasts extends React.Component {
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>{this.props.description}</Card.Text>
+            <Button variant="primary">Do Something</Button>
           </Card.Body>
         </Card>
       // </CardDeck>
