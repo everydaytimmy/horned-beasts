@@ -41,7 +41,10 @@ class HornedBeasts extends React.Component {
         open={this.props.open} 
         close={this.props.close} 
         show={this.props.show}
-        index={this.props.index} />
+        index={this.props.index}
+        title={this.props.title}
+        description={this.props.description}
+        img={this.props.img} />
       </>
     );
   }

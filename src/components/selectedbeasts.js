@@ -8,7 +8,7 @@ class SelectedBeasts extends React.Component {
     return (
     <Modal show={this.props.show} close={this.props.close}>
         <Modal.Header closeButton onClick={this.props.close}>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>{this.props.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
           <Modal.Footer>
