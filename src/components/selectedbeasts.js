@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
@@ -8,7 +7,7 @@ class SelectedBeasts extends React.Component {
   render() {
     return (
     <Modal show={this.props.show} close={this.props.close}>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton onClick={this.props.close}>
             <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>
           <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>

@@ -38,12 +38,14 @@ class HornedBeasts extends React.Component {
           </Card.Body>
         </Card>
         <SelectedBeasts 
-        open={this.props.handleShow} 
-        close={this.props.handleClose} 
-        show={this.props.showModal} />
+        open={this.props.open} 
+        close={this.props.close} 
+        show={this.props.show}
+        index={this.props.index} />
       </>
     );
   }
 }
 
 export default HornedBeasts;
+// TODO need to figure out the index
