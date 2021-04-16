@@ -29,7 +29,11 @@ class App extends React.Component {
     return (
       <Container fluid>
         <Header />
-        <Main data = {item} open = {this.handleShow} close = {this.handleClose} show = {this.state.showModal}/>
+        <Main 
+        data = {item} 
+        open = {this.handleShow} 
+        close = {this.handleClose} 
+        show = {this.state.showModal}/>
         <Footer />
       </Container>
     );
