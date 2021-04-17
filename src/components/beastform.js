@@ -9,8 +9,9 @@ class BeastForm extends React.Component {
     return (
       <Form>
         <Form.Group controlId="exampleForm.ControlSelect1">
-          <Form.Label>Number of Horns</Form.Label>
-          <Form.Control as="select">
+          <Form.Label style={{ fontWeight: "bold", fontSize: "x-large" }}>Number of Horns</Form.Label>
+          <Form.Control as="select" size="lg">
+            <option>No Filter</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
