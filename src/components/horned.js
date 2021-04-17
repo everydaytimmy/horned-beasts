@@ -26,6 +26,7 @@ class HornedBeasts extends React.Component {
         <Card bg="secondary"
           variant="dark"
           style={{ minWidth: '18rem' }}
+          onClick={this.onOpen}
         >
           <Card.Img onClick={this.onOpen}
           variant="top" 
