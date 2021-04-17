@@ -9,29 +9,12 @@ import Container from 'react-bootstrap/Container';
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      showModal: false,
-    }
-  }
-
-  handleShow = () => {
-    this.setState({showModal: true})
-  }
-
-  handleClose = () => {
-    this.setState({showModal: false});
-  }
 
   render() {
     return (
       <Container fluid>
         <Header />
-        <Main 
-        open = {this.handleShow} 
-        close = {this.handleClose} 
-        show = {this.state.showModal}/>
+        <Main />
         <Footer />
       </Container>
     );
