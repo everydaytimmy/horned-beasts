@@ -36,7 +36,11 @@ class HornedBeasts extends React.Component {
             <Card.Text>
               🤙 = {this.state.likes}
             </Card.Text>
-            <Card.Text>{this.props.description}</Card.Text>
+            <Card.Text>
+              Number of horns:
+              {this.props.horns}
+              <br/>
+              {this.props.description}</Card.Text>
             <Button variant="primary"
               onClick={this.addFavorite}>Favorite</Button>
           </Card.Body>
@@ -49,6 +53,7 @@ class HornedBeasts extends React.Component {
           description={this.props.description}
           img={this.props.img}
           likes={this.props.likes} 
+          horns={this.props.horns}
           />
       </>
     );

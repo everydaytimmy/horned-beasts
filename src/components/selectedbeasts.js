@@ -16,7 +16,11 @@ class SelectedBeasts extends React.Component {
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
             {console.log(this.props.title)}
-            <Card.Text>{this.props.description}</Card.Text>
+            <Card.Text>
+              Number of horns:
+              {this.props.horns}
+              <br/>
+              {this.props.description}</Card.Text>
           </Card.Body>
         </Card>
         <Modal.Footer>

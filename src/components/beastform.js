@@ -3,19 +3,21 @@ import Form from 'react-bootstrap/Form';
 
 
 class BeastForm extends React.Component {
-
+  handleSubmit = (e) => {
+    const valueInt = parseInt(e.target.value);
+    this.props.filter(valueInt);
+  }
 
   render() {
     return (
       <Form>
-        <Form.Group controlId="exampleForm.ControlSelect1">
-          <Form.Label style={{ fontWeight: "bold", fontSize: "x-large" }}>Number of Horns</Form.Label>
-          <Form.Control as="select" size="lg">
-            <option>No Filter</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>WOW</option>
+        <Form.Group>
+          <Form.Control as="select" size="lg" onChange={this.handleSubmit}>
+            <option value=''>Select Horn Amount</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='100'>WOW</option>
           </Form.Control>
         </Form.Group>
       </Form>
